@@ -1,23 +1,55 @@
+/* css reset */
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+    font: inherit;
+	vertical-align: baseline;    
+}
+
+html {
+	display: flex;
+	justify-content: center; /* This is for centering the content on large screens*/
+	background-color: black;
+}
+
+h2 {
+	font-weight: bolder;
+	font-size: 32px;
+}
+
 body {
+	background-color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	align-items: center;	
 	width: 75%;
+	height: 100vh;
 }
 
 header {
 	display: flex;
+	background: linear-gradient(135deg, #1e90ff 50%, white 50%); 
+	position: relative;
+	padding: 80px;
+	padding-bottom: 50px;
 }
+
 #header-pic-and-name {
     position: relative;
     display: flex;
     align-items: end;
     justify-content: center;
 }
+
 #header-picture {
-	height: auto;
+	height: 300px;
+
 	display: block;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
+
 #header-pic-name{
 	position: absolute;
 	color: white;
@@ -27,7 +59,12 @@ header {
 	padding: 10px;
 	z-index: 1 /* make sure it stays above background*/
 }
+
 #header-content {
 	padding: 32px;
-	flex: 1;
+	align-self: center;
+	background-color: lightblue;
+	max-height: 200px;
+	/* nice shadow effect: */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
