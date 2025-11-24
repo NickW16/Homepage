@@ -30,7 +30,7 @@ body {
 
 header {
 	display: flex;
-	background: linear-gradient(135deg, #1e90ff 50%, white 50%); 
+	background: linear-gradient(172deg, #1e90ff 65%, white 35%); 
 	position: relative;
 	padding: 80px;
 	padding-bottom: 50px;
