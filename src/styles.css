@@ -68,10 +68,20 @@ header {
 	padding: 32px;
 	align-self: center;
 	background-color: lightblue;
-	max-height: 200px;
+	max-height: 250px;
 	/* nice shadow effect: */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
    overflow: auto;
+}
+
+.icons-div-header {
+   display: flex;
+   height: 50px;
+   justify-content: end;
+}
+
+.icon-image-header {
+   height: 50px;
 }
 
 section {
