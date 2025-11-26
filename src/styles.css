@@ -6,6 +6,7 @@
 	font-size: 100%;
     font: inherit;
 	vertical-align: baseline;    
+   box-sizing: border-box;
 }
 
 html {
@@ -30,7 +31,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	align-items: center;	
-	width: 75%;
+   overflow-x: hidden;
 }
 
 header {
@@ -49,8 +50,8 @@ header {
 }
 
 #header-picture {
-	height: 300px;
-	display: block;
+   height: 300px;
+	max-height: 300px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
 }
 
@@ -68,10 +69,11 @@ header {
 	padding: 32px;
 	align-self: center;
 	background-color: lightblue;
-	max-height: 250px;
+   min-height: 250px;
 	/* nice shadow effect: */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
    overflow: auto;
+   width: 100%;
 }
 
 .icons-div-header {
@@ -161,3 +163,45 @@ footer {
    height: 30px;
    margin-right: 10px;
 }
+
+#footer-picture {
+   max-width: 730px;
+}
+
+/* media querry for smaller screens */ 
+
+@media (max-width: 1200px) {
+   footer {
+      display: flex;
+      flex-direction: column;
+   }
+}   
+
+/* media querry for mobile apps */
+
+
+@media (max-width: 786px) {
+   header {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #header-content {
+      max-width: 300px;
+   }
+
+   #mid-content {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+   }
+
+   footer {
+      display: flex;
+      flex-direction: column;
+   }
+
+   #footer-picture {
+      max-width: 100%;
+      padding: 0px;
+   }
+}  
