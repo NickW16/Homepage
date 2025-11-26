@@ -12,17 +12,16 @@ html {
 	display: flex;
 	justify-content: center; /* This is for centering the content on large screens*/
 	background-color: black;
-   font-size: 20px;
 }
 
 h2 {
 	font-weight: bolder;
-	font-size: 1.50rem;
+	font-size: 32px;
 }
 
 h3 {
    font-weight: bold;
-   font-size: 1.25rem;
+   font-size: 22px;
 }
 
 body {
@@ -71,12 +70,10 @@ header {
 	max-height: 200px;
 	/* nice shadow effect: */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
-   overflow: auto;
 }
 
 section {
    padding: 50px;
-   overflow: auto;
 }
 
 #mid-content {
@@ -115,39 +112,5 @@ iframe {
 footer {
    background-color: #1e90ff;
    display: flex;
-   width: 100%;
-   align-items: center;
    justify-content: center;
-   /*
-   padding-top: 30px;
-   padding-bottom: 30px;
-   */
-   overflow: auto;
-}
-
-#footer-text {
-   display: flex;
-   flex-direction: column;
-   gap: 35px;
-   padding: 20px;
-}   
-
-.icons-div-footer {
-   display: flex;
-   height: 30px;
-   justify-content: start;
-}
-
-.icon-image-large {
-   height: 60px;
-}
-
-#email-div {
-   display: flex;
-   align-items: center;
-}
-
-.email-icon {
-   height: 30px;
-   margin-right: 10px;
 }
