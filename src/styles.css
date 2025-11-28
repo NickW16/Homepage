@@ -12,7 +12,7 @@
 html {
 	display: flex;
 	justify-content: center; /* This is for centering the content on large screens*/
-	background-color: black;
+	background-color: #3A5074;
    font-size: 20px;
 }
 
@@ -30,13 +30,15 @@ body {
 	background-color: white;
 	display: flex;
 	flex-direction: column;
-	align-items: center;	
+	width: 80%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+   align-items: center;	
    overflow-x: hidden;
 }
 
 header {
 	display: flex;
-	background: linear-gradient(172deg, #1e90ff 65%, white 35%); 
+	background: linear-gradient(172deg, #2B4570 65%, white 35%); 
 	position: relative;
 	padding: 50px;
 	padding-bottom: 50px;
@@ -66,9 +68,9 @@ header {
 }
 
 #header-content {
-	padding: 32px;
+	padding: 26px;
 	align-self: center;
-	background-color: lightblue;
+	background-color: #B4C4DC;
    min-height: 250px;
 	/* nice shadow effect: */
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
@@ -116,8 +118,11 @@ iframe {
 
 .icons-div {
    display: flex;
+   flex-grow: 1;
    height: 30px;
-   justify-content: end;
+   justify-content: flex-end;
+   align-items: center;
+   gap: 10px;
 }
 
 .icon-image {
@@ -125,7 +130,8 @@ iframe {
 }
 
 footer {
-   background-color: #1e90ff;
+   color: white;
+   background-color: #2B4570;
    display: flex;
    width: 100%;
    align-items: center;
@@ -150,16 +156,13 @@ footer {
    justify-content: start;
 }
 
-.icon-image-large {
-   height: 60px;
-}
-
 #email-div {
    display: flex;
    align-items: center;
 }
 
 .email-icon {
+   filter: brightness(0) invert(1);
    height: 30px;
    margin-right: 10px;
 }
@@ -168,9 +171,20 @@ footer {
    max-width: 730px;
 }
 
+/* youtube red */
+.youtube-icon {
+   width: 50px;
+   filter: brightness(0) saturate(100%) invert(27%) sepia(95%) saturate(2500%) hue-rotate(355deg) brightness(95%) contrast(105%);
+}
+/* twitch purple */
+.twitch-icon {
+   width: 50px;
+   filter: brightness(0) saturate(100%) invert(23%) sepia(98%) saturate(4272%) hue-rotate(265deg) brightness(93%) contrast(101%);
+}
+
 /* media querry for smaller screens */ 
 
-@media (max-width: 1200px) {
+@media (max-width: 1370px) {
    footer {
       display: flex;
       flex-direction: column;
@@ -181,6 +195,9 @@ footer {
 
 
 @media (max-width: 786px) {
+   body {
+      width: 100%;
+   }
    header {
       display: flex;
       flex-direction: column;
